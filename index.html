@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<!--
+Copyright 2014 The Chromium Authors. All rights reserved.
+Use of this source code is governed by a BSD-style license that can be
+found in the LICENSE file.
+-->
+<head>
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+    <title>Messaging</title>
+    <script type="text/javascript" src="common.js"></script>
+    <script type ="text/javascript" src="example.js"></script>
+</head>
+<body data-name="messaging" data-tools="pnacl newlib glibc clang-newlib linux" data-configs="Debug Release" data-path="{tc}/{config}">
+<h1>Messaging</h1>
+<h2>Status: <code id="statusField">NO-STATUS</code></h2>
+<div>
+    <div>
+        <label for="addend1">1st Number:</label>
+        <input type="number" id="addend1" value="123">
+    </div>
+    <div>
+        <label for="addend2">2nd Number:</label>
+        <input type="number" id="addend2" value="234">
+    </div>
+    <div>
+        <label for="result">Sum:</label>
+        <pre id="result" style="font-weight: bold"> </pre>
+    </div>
+    <input type="button" id="addAsync" value="Add Asynchronously">
+    <input type="button" id="addSync" value="Add Synchronously">
+</div>
+<div id="listener"></div>
+</body>
+</html>
